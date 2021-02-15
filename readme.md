@@ -11,10 +11,6 @@ note - "discover tests" is telling python to find the tests in the tests directo
 coverage run -m unittest discover tests
 [Coverage Docs](https://coverage.readthedocs.io/en/latest/)
 
-# Pycharm Unit Test Run Config
-
-![Pycharm Run Configuration](pycharmTestConfig.PNG)
-
 # Notes
 
 1.  [You need to signup for github student account pack](https://education.github.com/pack)
