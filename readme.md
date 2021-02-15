@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/kaw393939/IS218SP21_CALC.svg?branch=master)](https://travis-ci.com/kaw393939/IS218SP21_CALC)
+[![Build Status](https://travis-ci.com/JohnnyPillacela/CalculatorUnitTesting.svg?branch=master)](https://travis-ci.com/JohnnyPillacela/CalculatorUnitTesting)
 [![Coverage Status](https://coveralls.io/repos/github/JohnnyPillacela/CalculatorUnitTesting/badge.svg?branch=master)](https://coveralls.io/github/JohnnyPillacela/CalculatorUnitTesting?branch=master)
 # Command to run tests without coverage
 
