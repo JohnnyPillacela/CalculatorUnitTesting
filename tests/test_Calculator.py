@@ -15,7 +15,7 @@ class CalculatorTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 0)
 
     def test_addition(self):
-        file = Reader("tests/Unit_Test_Addition.csv").content
+        file = Reader("~/tests/Unit_Test_Addition.csv").content
         print("TESTING ADDITION")
         for row in file:
             result = float(row[2])
@@ -24,7 +24,6 @@ class CalculatorTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, result)
             # self.assertEqual(self.calculator.add(5, 6), 11)
         print("PASSED")
-        #file.clear()
         print("\n")
 
     def test_subtraction(self):
@@ -35,7 +34,6 @@ class CalculatorTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.subtract(row[0], row[1]), float(row[2]))
             # self.assertEqual(self.calculator.subtract(5, 6), 1)
         print("PASSED")
-        #file.clear()
         print("\n")
 
     def test_multiplication(self):
@@ -47,7 +45,6 @@ class CalculatorTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.multiply(row[0], row[1]), float(row[2]))
             # self.assertEqual(self.calculator.multiply(5, 6), 30)
         print("PASSED")
-        #file.clear()
         print("\n")
 
     def test_division(self):
@@ -59,7 +56,6 @@ class CalculatorTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.divide(row[0], row[1]), float(row[2]))
             # self.assertEqual(self.calculator.divide(6, 30), 5)
         print("PASSED")
-        #file.clear()
         print("\n")
 
     def test_square(self):
@@ -72,7 +68,6 @@ class CalculatorTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, result)
             # self.assertEqual(self.calculator.square(5), 25)
         print("PASSED")
-        #file.clear()
         print("\n")
 
     def test_square_root(self):
@@ -85,5 +80,4 @@ class CalculatorTestCase(unittest.TestCase):
             self.assertAlmostEqual(self.calculator.result, result)
             # self.assertEqual(self.calculator.square_root(100), 10)
         print("PASSED")
-        #file.clear()
         print("\n")

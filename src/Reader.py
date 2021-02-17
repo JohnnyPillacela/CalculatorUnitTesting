@@ -22,5 +22,3 @@ class Reader:
                 if '' in row:
                     row.remove('')
                 self.content.append(row)
-        #csv_file.close()
-        #return self.content
