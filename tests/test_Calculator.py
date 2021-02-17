@@ -15,7 +15,7 @@ class CalculatorTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 0)
 
     def test_addition(self):
-        file = Reader("~/tests/Unit_Test_Addition.csv").content
+        file = Reader("../testCases/Unit_Test_Addition.csv").content
         print("TESTING ADDITION")
         for row in file:
             result = float(row[2])
@@ -27,7 +27,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_subtraction(self):
-        file = Reader("tests/Unit_Test_Subtraction.csv").content
+        file = Reader("../testCases/Unit_Test_Subtraction.csv").content
         print("TESTING SUBTRACTION")
         for row in file:
             # print('---->: {0:4} -  {1:4} =  {2:4}'.format(row[1], row[0], row[2]))
@@ -37,7 +37,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_multiplication(self):
-        file = Reader("tests/Unit_Test_Multiplication.csv").content
+        file = Reader("../testCases/Unit_Test_Multiplication.csv").content
         print("TESTING MULTIPLICATION")
         for row in file:
             result = float(row[2])
@@ -48,7 +48,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_division(self):
-        file = Reader("tests/Unit_Test_Division.csv").content
+        file = Reader("../testCases/Unit_Test_Division.csv").content
         print("TESTING DIVISION")
         for row in file:
             result = float(row[2])
@@ -59,7 +59,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_square(self):
-        file = Reader("tests/Unit_Test_Square.csv").content
+        file = Reader("../testCases/Unit_Test_Square.csv").content
         print("TESTING SQUARE")
         for row in file:
             result = float(row[1])
@@ -71,7 +71,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_square_root(self):
-        file = Reader("tests/Unit_Test_Square_Root.csv").content
+        file = Reader("../testCases/Unit_Test_Square_Root.csv").content
         print("TESTING SQUARE ROOT")
         for row in file:
             result = float(row[1])
