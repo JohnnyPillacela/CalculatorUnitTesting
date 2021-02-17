@@ -15,7 +15,7 @@ class CalculatorTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 0)
 
     def test_addition(self):
-        file = reader("../testCases/Unit_Test_Addition.csv")
+        file = reader("testCases/Unit_Test_Addition.csv")
         print("TESTING ADDITION")
         for row in file:
             result = float(row[2])
@@ -28,7 +28,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_subtraction(self):
-        file = reader("../testCases/Unit_Test_Subtraction.csv")
+        file = reader("testCases/Unit_Test_Subtraction.csv")
         print("TESTING SUBTRACTION")
         for row in file:
             # print('---->: {0:4} -  {1:4} =  {2:4}'.format(row[1], row[0], row[2]))
@@ -39,7 +39,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_multiplication(self):
-        file = reader("../testCases/Unit_Test_Multiplication.csv")
+        file = reader("testCases/Unit_Test_Multiplication.csv")
         print("TESTING MULTIPLICATION")
         for row in file:
             result = float(row[2])
@@ -51,7 +51,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_division(self):
-        file = reader("../testCases/Unit_Test_Division.csv")
+        file = reader("testCases/Unit_Test_Division.csv")
         print("TESTING DIVISION")
         for row in file:
             result = float(row[2])
@@ -63,7 +63,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_square(self):
-        file = reader("../testCases/Unit_Test_Square.csv")
+        file = reader("testCases/Unit_Test_Square.csv")
         print("TESTING SQUARE")
         for row in file:
             result = float(row[1])
@@ -76,7 +76,7 @@ class CalculatorTestCase(unittest.TestCase):
         print("\n")
 
     def test_square_root(self):
-        file = reader("../testCases/Unit_Test_Square_Root.csv")
+        file = reader("testCases/Unit_Test_Square_Root.csv")
         print("TESTING SQUARE ROOT")
         for row in file:
             result = float(row[1])
