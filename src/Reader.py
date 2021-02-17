@@ -1,4 +1,10 @@
 import csv
+from pathlib import Path
+
+
+def absolute_path(filepath):
+    relative = Path(filepath)
+    return relative.absolute()
 
 
 class Reader:
@@ -9,7 +15,7 @@ class Reader:
         self.reader(file)
 
     def reader(self, path):
-        with open(path) as csv_file:
+        with open(absolute_path(path)) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             first_line = csv_file.readline()  # to get rid of the first line i.e val1, val2, result
             for row in csv_reader:
