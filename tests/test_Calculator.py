@@ -1,7 +1,7 @@
 import unittest
 
 from src.calculator.calculator import Calculator
-from src.Reader import Reader
+from CSV_Reader.Reader import Reader
 
 
 class CalculatorTestCase(unittest.TestCase):
