@@ -3,4 +3,5 @@
 
 # Calculator Unit Testing Project for IS 218
 ## By Johnny Pillacela
-### Being tested and built on coveralls and travis
+### Being tested on Travis
+![Being runned on Docker](RunningInDocker.PNG)
